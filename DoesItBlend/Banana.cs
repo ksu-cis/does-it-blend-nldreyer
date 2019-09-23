@@ -12,7 +12,7 @@ namespace DoesItBlend
         /// Blends the banana
         /// </summary>
         /// <returns>The result of blending the banana</returns>
-        public override string Blend()
+        public sealed override string Blend()
         {
             return "Yellow mush";
         }

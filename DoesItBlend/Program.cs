@@ -11,6 +11,7 @@ namespace DoesItBlend
             List<IBlendable> blendables = new List<IBlendable>();
             blendables.Add(new Strawberry());
             blendables.Add(new Banana());
+            blendables.Add(new OverripeBanana());
             blendables.Add(new CellPhone());
             blendables.Add(new IceCubes());
             for (int i = 0; i < 10; i++)
@@ -24,6 +25,8 @@ namespace DoesItBlend
             {
                 mess.AppendLine(blendable.Blend());
             }
+
+            mess.AppendLine(new OverripeBanana().Blend());
 
             Console.WriteLine(mess);
         }
